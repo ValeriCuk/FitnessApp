@@ -19,7 +19,7 @@ public class Running extends Training {
                 .append(" хв. Дистанція: ")
                 .append(distance)
                 .append(" км. Кілокалорій: ")
-                .append(this.calculateCalorieExpenditure());
+                .append(String.format("%.2f", this.calculateCalorieExpenditure()));
         System.out.println(builder.toString());
     }
 }
